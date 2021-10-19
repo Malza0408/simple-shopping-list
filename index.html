@@ -15,43 +15,38 @@
 </head>
 
 <body>
-
-</body>
-<section id="app">
-  <header id="title">
-    <span>shopping List</span>
-  </header>
-
-  <section id="list">
-    <ul class="items">
-      <!-- <li class="item__container">
-        <div class="item">
-          <span class="item__name"></span>
-          <span class="item__price"></span>
-          <button class="item__delete">
-            <i class="fas fa-trash-alt"></i>
-          </button>
+  <section id="app">
+    <header id="title">
+      <span>shopping List</span>
+    </header>
+  
+    <section id="list">
+      <ul class="items">
+        <!-- <li class="item__container">
+          <div class="item">
+            <span class="item__name"></span>
+            <span class="item__price"></span>
+            <button class="item__delete">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+          <div class="item__divide"></div>
+        </li> -->
+        <div class="items__price">총 금액: <span class="totalPrice"></span>
         </div>
-        <div class="item__divide"></div>
-      </li> -->
-      <div class="items__price">총 금액: <span class="totalPrice"></span>
-      </div>
-    </ul>
+      </ul>
+    </section>
+  
+    <form id="input-form">
+      <input type="text" placeholder="음식을 작성해주세요!" required maxlength="15" class="food">
+      <input type="number" placeholder="가격을 작성해주세요!" required max="1000000000" class="price">
+      <button class="addInput">
+        <i class="fas fa-cart-plus"></i>
+      </button>
+    </form>
+  
+    <footer id="add">
+    </footer>
   </section>
-
-  <form id="input-form">
-    <input type="text" placeholder="음식을 작성해주세요!" required maxlength="15" class="food">
-    <input type="number" placeholder="가격을 작성해주세요!" required max="1000000000" class="price">
-    <button class="addInput">
-      <i class="fas fa-cart-plus"></i>
-    </button>
-  </form>
-
-  <footer id="add">
-  </footer>
-</section>
-
-
-
-
+</body>
 </html>
